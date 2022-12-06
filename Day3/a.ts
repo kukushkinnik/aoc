@@ -56,7 +56,7 @@ const priorityNumbers = {
   Z: 52,
 };
 
-const racsack: string[][] = readInput.map((elem) => {
+const rucksack: string[][] = readInput.map((elem) => {
   const firstCompartment = elem.slice(0, elem.length / 2);
   const secondCompartment = elem.slice(elem.length / 2);
   const compartments: string[] = [firstCompartment, secondCompartment];
@@ -64,7 +64,7 @@ const racsack: string[][] = readInput.map((elem) => {
   return compartments;
 });
 
-let items = racsack.map((elem) => findCommon(elem));
+let items = rucksack.map((elem) => findCommon(elem));
 type ObjectKeyAlph = keyof typeof priorityNumbers;
 
 const priority: number[] = items.map((elem) => {
