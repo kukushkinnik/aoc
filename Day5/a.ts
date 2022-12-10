@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-const input = fs.readFileSync("test-input.txt", "utf-8").split("\n\n");
+const input = fs.readFileSync("input.txt", "utf-8").split("\n\n");
 const inputStacks = input[0].split("\n");
 const movesInput = input[1].trim().split("\n");
 const stacks = [];
